@@ -1,3 +1,5 @@
+import java.util.*;
+
 public class Ticket{
 	public void Barcode;
 	public String MenuName;
