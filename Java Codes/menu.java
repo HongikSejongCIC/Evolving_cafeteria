@@ -1,30 +1,13 @@
-
-import java.util.*;
-
-public class menu {
-
-    public menu() {
-    }
-
-    public String MenuName;
-
+public class Menu {
+	public String MenuName;
     public int Price;
+    
+	public Menu(String MenuName, int Price){
+		this.MenuName=MenuName;
+		this.Price=Price;
+	}
 
-    public Boolean Removemenu() {
-        // TODO implement here
-        return null;
+    public void Viewmenu() {
+    	System.out.println("메뉴 : "+this.MenuName+" / 가격 : "+this.Price);
     }
-
-
-    public Boolean Addmenu(String MenuName, int Price) {
-        // TODO implement here
-        return null;
-    }
-
-    public menu Viewmenu() {
-        // TODO implement here
-        return null;
-    }
-
 }
-
