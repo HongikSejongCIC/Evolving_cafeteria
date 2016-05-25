@@ -8,6 +8,7 @@ public class guest {
     private String Carddue;
     private String Cardpass;
     private String Birthday;
+    private int Account;
 
     public guest(String Name, String Cardnum, String Carddue, String Cardpass, String Birthday) {
     	this.Name = Name;
@@ -16,7 +17,14 @@ public class guest {
     	this.Cardpass = Cardpass;
     	this.Birthday = Birthday;
     }
-
+    public void output(int price){
+        Account -= price;
+        System.out.println("출금액:"+price+" 잔액:"+Account);
+    }
+    public void intput(int price){
+        Account += price;
+        System.out.println("입금액:"+price+" 잔액:"+Account);
+    }
     public Boolean CardCheck() {
         
         return null;
