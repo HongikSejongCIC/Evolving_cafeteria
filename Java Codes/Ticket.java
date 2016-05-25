@@ -14,8 +14,12 @@ public class Ticket{
 		return Ticket;
 	}
 
-	public Boolean Ticketing (String menuNumber,int Price){
-		this.Barcode = "8801234"+ menuNumber+checkDigit; 
+	public Boolean Ticketing (String GuestName, Menu menu,int Price){
+		this.Barcode = "8801234"+ menu.menuNumber+menu.checkDigit++; 
+		this.MenuName = menu.ManuName;
+		this.Date = ;
+		this.GuestName = GuestName;
+		
 		return true;
 	}
 }
