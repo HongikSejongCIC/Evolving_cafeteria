@@ -10,15 +10,17 @@ public class Ticket{
 		return true;
 	}
 
-	public Ticket ViewTicket(String name){
-		return Ticket;
+	public String ViewTicket(String MenuNumber){
+		Barcode = this.MenuNumber; 
+		return Barcode;
 	}
 
-	public Boolean Ticketing (String GuestName, Menu menu,int Price){
+
+	public Boolean Ticketing (String GuestName, String MenuNumber, int checkDigit, String MenuName,int Price){
 		Calendar today = Calendar.getInstance();
-		this.Barcode = "8801234"+ menu.menuNumber+menu.checkDigit++; 
-		this.MenuName = menu.ManuName;
-		this.Date = dateToString(today);
+		this.Barcode = "8801234"+ MenuNumber+checkDigit++; 
+		this.MenuName = MenuName;
+		this.Date = DateToString(today);
 		this.GuestName = GuestName;
 		
 		return true;
