@@ -2,6 +2,7 @@ public class Menu {
 	public String MenuName;
 	public int Price;
 	public String menuNumber;
+	public int checkDigit = 0;
     
 	public Menu(String MenuName, int Price, String menuNumber){
 		this.MenuName=MenuName;
