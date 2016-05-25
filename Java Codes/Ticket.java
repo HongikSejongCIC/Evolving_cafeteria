@@ -1,7 +1,7 @@
 import java.util.*;
 
 public class Ticket{
-	public void Barcode;
+	public String Barcode;
 	public String MenuName;
 	public int Date;
 	public String GuestName;
@@ -14,7 +14,8 @@ public class Ticket{
 		return Ticket;
 	}
 
-	public Boolean Ticketing (String MenuName,int Price){
+	public Boolean Ticketing (String menuNumber,int Price){
+		this.Barcode = "8801234"+ menuNumber+checkDigit; 
 		return true;
 	}
 }
