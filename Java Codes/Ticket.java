@@ -15,11 +15,19 @@ public class Ticket{
 	}
 
 	public Boolean Ticketing (String GuestName, Menu menu,int Price){
+		Calendar today = Calendar.getInstance();
 		this.Barcode = "8801234"+ menu.menuNumber+menu.checkDigit++; 
 		this.MenuName = menu.ManuName;
-		this.Date = ;
+		this.Date = dateToString(today);
 		this.GuestName = GuestName;
 		
 		return true;
 	}
+	public static String DateToString(Calendar date){  
+  		return date.get(Calendar.YEAR)+"."
+    			+(date.get(Calendar.MONTH)+1)+"."
+    			+(date.get(Calendar.DATE))+" "
+			+(date.get(Calendar.HOUR))+":"
+    			+(date.get(Calendar.MINUTE));
+ 	}
 }
