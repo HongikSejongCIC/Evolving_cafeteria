@@ -5,7 +5,7 @@ public class admin {
     private String ID = "admin";
     private String Pass = "1234";
 
-    public Boolean IDCheck(id, pass) {
+    public Boolean IDCheck(String id,String pass) {
         return ((id==this.ID)&&(pw==this.Pass));
     }
 
