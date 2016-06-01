@@ -6,7 +6,7 @@ public class admin {
     private String Pass = "1234";
 
     public Boolean IDCheck(String id,String pass) {
-        return (id.equals(this.ID))&&(pass.equals(this.Pass)));
+        return ((id.equals(this.ID))&&(pass.equals(this.Pass)));
     }
 
 }
