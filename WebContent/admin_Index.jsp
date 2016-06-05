@@ -1,19 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR" pageEncoding="EUC-KR"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8"%>
 <%@ page import = "test.admin" %>
-
+<% request.setCharacterEncoding("UTF-8"); %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Welcome to Evolving Cafeteria!</title>
 		<script language='javascript'>
 			function check(){
 				if(document.login1.id.value==''){
-					alert("ID¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+					alert("IDë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 					document.login1.id.focus();
 				}
 				else if(document.login1.password.value==''){
-					alert("Password¸¦ ÀÔ·ÂÇÏ¼¼¿ä");
+					alert("Passwordë¥¼ ì…ë ¥í•˜ì„¸ìš”");
 					document.login1.password.focus();
 				}
 				else{
@@ -24,14 +24,14 @@
 		</script>
 	</head>
 	<body>
-		<h2>°ü¸®ÀÚ °èÁ¤À¸·Î ·Î±×ÀÎ ÇÏ½Ê½Ã¿À.</h2>
-		<form name="login1" method="POST" action="admin.jsp" onSubmit="check();return false">
-			ID&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp : <input type="text" id="id" size="10">
+		<h2>ê´€ë¦¬ì ê³„ì •ìœ¼ë¡œ ë¡œê·¸ì¸ í•˜ì‹­ì‹œì˜¤.</h2>
+		<form name="login1" method="POST" action="./confirm_admin.jsp" onSubmit="check(); return false">
+			ID : <input type="text" name="id" size="10">
 			<br /><br />
-			Password : <input type="password" id="password" size="10">
+			Password : <input type="password" name="password" size="10">
 			<br /><br />
-			<input type="submit" value="·Î±×ÀÎ">&nbsp
-			<input type="button" value="µ¹¾Æ°¡±â" id="Index" onclick="location.href='./Index.jsp'">
+			<input type="submit" value="ë¡œê·¸ì¸"> &nbsp
+			<input type="button" value="ëŒì•„ê°€ê¸°" id="Index" onclick="location.href='./Index.jsp'">
 		</form>
 	</body>
 </html>
