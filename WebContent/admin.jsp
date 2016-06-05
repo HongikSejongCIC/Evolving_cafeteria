@@ -1,19 +1,19 @@
-<%@ page language="java" contentType="text/html; charset=EUC-KR"
-    pageEncoding="EUC-KR" import="test.admin"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8" pageEncoding="UTF-8" import="test.admin"%>
+<% request.setCharacterEncoding("UTF-8"); %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
-		<meta http-equiv="Content-Type" content="text/html; charset=EUC-KR">
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 		<title>Welcome to Evolving Cafeteria!</title>
 	</head>
 	<body>
-		<h2>°ü¸®ÀÚ ¸Ş´ºÀÔ´Ï´Ù.</h2>
-		<input type="button" value="Å×½ºÆ®1" id="test1" onclick="location.href=''">&nbsp&nbsp&nbsp
-		<input type="button" value="Å×½ºÆ®2" id="test2" onclick="location.href=''">&nbsp&nbsp&nbsp
-		<input type="button" value="Å×½ºÆ®3" id="test3" onclick="location.href=''">&nbsp&nbsp&nbsp
-		<input type="button" value="Å×½ºÆ®4" id="test4" onclick="location.href=''">&nbsp&nbsp&nbsp
-		<input type="button" value="Å×½ºÆ®5" id="test5" onclick="location.href=''">&nbsp&nbsp&nbsp
+		<h2>ê´€ë¦¬ì ë©”ë‰´ì…ë‹ˆë‹¤.</h2>
+		<input type="button" value="ë²„íŠ¼1" name="b1" onclick="location.href=''">&nbsp&nbsp&nbsp
+		<input type="button" value="ë²„íŠ¼2" name="b2" onclick="location.href=''">&nbsp&nbsp&nbsp
+		<input type="button" value="ë²„íŠ¼3" name="b3" onclick="location.href=''">&nbsp&nbsp&nbsp
+		<input type="button" value="ë²„íŠ¼4" name="b4" onclick="location.href=''">&nbsp&nbsp&nbsp
+		<input type="button" value="ë²„íŠ¼5" name="b5" onclick="location.href=''">&nbsp&nbsp&nbsp
 		<br /><br />
-		<input type="button" value="µ¹¾Æ°¡±â" id="Index" onclick="location.href='./Index.jsp'">
+		<input type="button" value="ëŒì•„ê°€ê¸°" id="Index" onclick="location.href='./Index.jsp'">
 	</body>
 </html>
